@@ -19,7 +19,7 @@ const roverOne = {
   y: 0,
   travelLog: [{direction: "W", x:4, y:0}],
   pos: board[0][4] = "r1"  
-}
+};
 const roverTwo = {
   name: "r2",
   direction: "W",
@@ -27,7 +27,7 @@ const roverTwo = {
   y: 0,
   travelLog: [{direction: "W", x:5, y:0}],
   pos: board[0][5] = "r2"  
-}
+};
 // === Obstacle Array ===
 const obstacles = [
   {item: "o1",
@@ -36,7 +36,7 @@ const obstacles = [
    pos: board[1][1] = "o2"},
   {item: "o3",
    pos: board[2][0] = "o3"},
-]
+];
 console.log(board.join('\n') + '\n');
 
 // === Instructions variable ===
@@ -229,7 +229,7 @@ function printAction(printCommand){
   }    
 }
 function printPosition(rover){
-  console.log(`New rover position - direction:${rover.direction}, x=${rover.x}, y=${rover.y}`)
+  console.log(`New rover position - direction:${rover.direction}, x=${rover.x}, y=${rover.y}`);
 }
 // === Function Registration of Position History ===
 function regPosHist(rover){
